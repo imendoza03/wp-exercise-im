@@ -1,0 +1,81 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: March 16, 2018 1:59 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.34
+WORDPRESS:	4.9.4
+PHP INFO:	7.1.9 | SAPI: apache2handler
+SERVER:		Apache/2.4.27 (Win64) PHP/7.1.9 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 6MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+FILTERED: [] 
+RESPONSE: Ran from C:/xampp/mysql/bin/mysqldump.exe 
+TABLES: total:30 | filtered:0 | create:30 
+SQL CREATED: 20180316_ivanmendoza_eb06cf24f5014b913977180316135907_database.sql 
+SQL FILE SIZE: 660.34KB (676184) 
+SQL FILE TIME: 2018-03-16 13:59:32 
+SQL RUNTIME: 0.48 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/Users/Etudiant/Documents/workspace/wp-exercise-im 
+ARCHIVE FILE: 20180316_ivanmendoza_eb06cf24f5014b913977180316135907_archive.zip 
+FILTERS: *ON* 
+DIRS:
+	C:/Users/Etudiant/Documents/workspace/wp-exercise-im/wp-content/cache
+	C:/Users/Etudiant/Documents/workspace/wp-exercise-im/wp-content/themes/understrap/node_modules 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	136.81MB 
+STATS:	Dirs 1,262 | Files 12,295 
+SQL ADDED: 20180316_ivanmendoza_eb06cf24f5014b913977180316135907_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 13557
+    [filename] => C:\Users\Etudiant\Documents\workspace\wp-exercise-im\wp-snapshots\tmp\20180316_ivanmendoza_eb06cf24f5014b913977180316135907_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 74MB 
+ARCHIVE RUNTIME: 155.12 sec. 
+MEMORY STACK: 10MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [C:/Users/Etudiant/Documents/workspace/wp-exercise-im/wp-snapshots/tmp/20180316_ivanmendoza_eb06cf24f5014b913977180316135907_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 660.34KB 
+Installer File: 445.26KB 
+Archive File: 74MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 162.49 sec.
+PEAK PHP MEMORY USED: 10MB
+DONE PROCESSING => 20180316_ivanmendoza March 16, 2018 2:02 pm
+ 

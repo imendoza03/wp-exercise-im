@@ -26,7 +26,7 @@ define('DB_NAME', 'wp-exercise-im');
 define('DB_USER', 'imendoza03');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '251248EBF243AB98B99FA52D035774F70BDBA4136322C10711DE92EBF9A9A998');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
