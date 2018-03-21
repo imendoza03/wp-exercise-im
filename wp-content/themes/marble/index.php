@@ -38,7 +38,7 @@
 				<div class="marble-col">
 					<?php 
 						the_title() . '<br/>';
-						the_excerpt() . '<br/>';
+						the_content() . '<br/>';
 					?>
 					<span><?php the_author() ?></span>
 					<span><?php the_date() ?></span>

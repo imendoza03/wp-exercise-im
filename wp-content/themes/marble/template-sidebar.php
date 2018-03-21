@@ -64,7 +64,42 @@
 				
 				?>
 			
-				<?php get_sidebar(); ?>		
+				<?php get_sidebar(); ?>	
+
+				<p>&nbsp;</p>
+				<h3>WPDB requests</h3>
+				<?php
+					global $wpdb;
+
+					echo  $wpdb->posts;
+
+					// echo $wpdb->prefix;
+
+					//two ways to call  for a table with prefix
+
+					// $query = "SELEC * FROM {$wpdb->prefix}posts";
+					// $query = "SELEC * FROM $wpdb->prefix";
+
+					// $results = $wpdb->get_results("SELEC * FROM $wpdb->posts");
+
+					// foreach($results as $post):
+					// 	echo $post->post_title;
+					// 	echo '<br/>';
+					// endforeach;
+
+					/**
+					 * get_raw()
+					 * get a single row result of an SQL request
+					 */
+
+					//  $result = $wpdb->get_row("SELECT post_title, post_date FROM $wpdb->posts WHERE ID = 10");
+					//  echo $results->post_title;
+
+					$id = $_GET['id'];
+					$result = $wpdb->get_row($wpdb->prepare("SELECT post_title, post_date FROM $wpdb->posts WHERE ID = %d", $id));
+					echo '<p>' . $result . '</p>'; 
+					
+				?>	
 			</div>
 			
 

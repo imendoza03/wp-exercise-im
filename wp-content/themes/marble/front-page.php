@@ -12,30 +12,64 @@
 
 		<section id="section-icons" class="wrapper">
 			<div class="container">
-				<div class="col">
+				<!-- use of the default loop -->
+				<?php
+					$args = array(
+						'posts_per_page' => 4,
+						'post_type' => 'feature',
+						// 'order' => 'ASC'
+					);
+
+					$query = new WP_Query( $args );
+				?>
+				<!-- start of the custom loop -->
+				<?php 
+					if($query->have_posts()): while($query->have_posts()) : $query->the_post();
+						?>
+						<!-- display the post content in a html template -->
+						<article class="col">
+						<?php
+							if ( has_post_thumbnail() ) { 
+								the_post_thumbnail('project-custom-size');
+							}
+						?>
+						<i class="icon <?php echo get_post_meta(get_the_ID(), 'icon_class', true); ?>"></i>
+						<!--<?php echo get_post_meta(get_the_ID(), 'icon', true); ?> -->
+						<h4><?php the_title(); ?></h4>
+						<p><?php the_excerpt(); ?></p>
+					</article>
+						<?php
+						endwhile;
+					else:
+						echo '<p> post here</p>';
+					endif;
+
+					wp_reset_postdata();
+				?>
+				<!-- <div class="col">
 					<i class="icon lamp"></i>
 					<h4>Pellentesque</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quasi facere, animi maxime natus cupiditate</p>
 				</div>
-				<!-- ./col1 -->
+				
 				<div class="col">
 					<i class="icon clock"></i>
 					<h4>Consectetur</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quasi facere, animi maxime natus cupiditate</p>
 				</div>
-				<!-- ./col2 -->
+				
 				<div class="col">
 					<i class="icon flask"></i>
 					<h4>Tristiquet</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quasi facere, animi maxime natus cupiditate</p>
 				</div>
-				<!-- ./col3 -->
+				
 				<div class="col">
 					<i class="icon ticket"></i>
 					<h4>Fermentum</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quasi facere, animi maxime natus cupiditate</p>
-				</div>
-				<!-- ./col4 -->
+				</div> -->
+				
 			</div>
 
 			<hr />
