@@ -23,7 +23,7 @@
 define('DB_NAME', 'wp-exercise-im');
 
 /** MySQL database username */
-define('DB_USER', 'imendoza03');
+define('DB_USER', '');
 
 /** MySQL database password */
 define('DB_PASSWORD', '');
